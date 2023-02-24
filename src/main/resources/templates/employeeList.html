@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee List</title>
+    <style>
+        h1 {
+            text-align: center;
+
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 0 auto;
+
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px;
+            border-radius: 5px;
+            width: 60px;
+        }
+
+        button:hover {
+            background-color: #3e8e41;
+        }
+
+        button a {
+            color: white
+        }
+
+        .addBtn {
+            display: block;
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            width: 140px;
+            margin: 20px auto
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee List</h1>
+<!--<table>-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--        <th>ID</th>-->
+<!--        <th>Name</th>-->
+<!--        <th>Image</th>-->
+<!--        <th>Edit</th>-->
+<!--        <th>Delete</th>-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--    <tr th:each="employee: ${employees}">-->
+<!--        <td th:text="${employee.id}"></td>-->
+<!--        <td><a th:text="${employee.name}"></a></td>-->
+<!--        <td><a th:href="'/' + ${employee.id}">-->
+<!--            <img th:src="${employee.image}"/>-->
+<!--        </a></td>-->
+<!--        <td>-->
+<!--            <button><a th:href="'/updateEmployee/' + ${employee.id}">Update</a></button>-->
+<!--        </td>-->
+<!--        <td>-->
+<!--            <form th:action="@{/deleteEmployee/{id}(id=${employee.id})}" method="post">-->
+<!--                <button type="submit">Delete</button>-->
+<!--            </form>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    </tbody>-->
+<!--</table>-->
+<!--<button class="addBtn"><a th:href="'/addEmployee'">Add new employee</a></button>-->
+
+</body>
+</html>
